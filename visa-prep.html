@@ -1,0 +1,311 @@
+<html><head><base href="https://websim.ai" />
+    <title>Comprehensive Visa Interview Analysis - WebSim.ai</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .chart-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .info-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .info-section h3 {
+            color: #3498db;
+        }
+        .info-section ul {
+            padding-left: 20px;
+        }
+        .hyderabad-tips {
+            background-color: #e8f4f8;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .chat-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        .chat-message {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .chat-message:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        .chat-message strong {
+            color: #3498db;
+        }
+        .success {
+            color: #27ae60;
+        }
+        .failure {
+            color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comprehensive Visa Interview Analysis for MS in Computer Science</h1>
+
+    <div class="chart-container">
+        <canvas id="approvalChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="refusalChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="refusalReasonsChart"></canvas>
+    </div>
+
+    <div class="info-section">
+        <h2>Frequently Asked Questions in Visa Interviews</h2>
+        <ul>
+            <li>Why did you choose this particular university?</li>
+            <li>What is your planned course of study?</li>
+            <li>What are your post-graduation plans?</li>
+            <li>How will you finance your education?</li>
+            <li>What is your academic background?</li>
+            <li>Do you have any work experience related to your field of study?</li>
+            <li>What are your GRE and TOEFL/IELTS scores?</li>
+            <li>Why do you want to study in the US instead of in India?</li>
+            <li>How does this program align with your career goals?</li>
+            <li>Can you explain any gaps in your education or employment?</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Reasons for Visa Refusal</h2>
+        <ul>
+            <li><strong>Lack of financial evidence:</strong> Insufficient proof of ability to pay for education and living expenses.</li>
+            <li><strong>Weak ties to home country:</strong> Failure to demonstrate intent to return after studies.</li>
+            <li><strong>Inconsistent or incomplete information:</strong> Discrepancies in application or interview responses.</li>
+            <li><strong>Poor academic fit:</strong> Chosen program doesn't align with academic background or career goals.</li>
+            <li><strong>Insufficient English proficiency:</strong> Inability to effectively communicate during the interview.</li>
+            <li><strong>Lack of preparation:</strong> Inability to articulate clear reasons for studying in the US.</li>
+            <li><strong>Previous visa violations:</strong> History of overstaying or violating terms of previous visas.</li>
+        </ul>
+    </div>
+
+    <div class="chat-container">
+        <h2>Visa Interview Experiences</h2>
+        <div class="chat-message">
+            <strong>Applicant1:</strong> <span class="failure">Got refused today at the Mumbai consulate. The VO barely looked at my documents and kept asking about my intent to return. I couldn't convince him that I have strong ties to India.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant2:</strong> <span class="failure">Hyderabad consulate rejection here. They focused a lot on my finances. Even though I had a loan approval, they weren't satisfied with the collateral. Guess I need to strengthen that part.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant3:</strong> <span class="failure">New Delhi consulate refusal. The VO was concerned about the gap in my education. I tried explaining my startup experience during that time, but it didn't seem to convince them.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant4:</strong> <span class="failure">Chennai consulate here. Got refused because they felt my chosen program (AI and Machine Learning) didn't align well with my undergraduate degree in Mechanical Engineering. Need to work on explaining this career shift better.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant5:</strong> <span class="failure">Kolkata consulate rejection. My English wasn't up to par during the interview. I got nervous and couldn't express myself clearly. Going to work on my language skills and try again.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant6:</strong> <span class="success">Just got my visa approved at the Hyderabad consulate! The VO was impressed with my research experience and how it aligned with my chosen program. They asked about my financial plans, and I was well-prepared with documents showing my scholarship and family support.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant7:</strong> <span class="success">Chennai consulate success here! They focused a lot on my post-graduation plans. I explained how I plan to bring the knowledge back to contribute to India's tech sector, and they seemed satisfied with my answer.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant8:</strong> <span class="success">Got my visa at Mumbai consulate today! The VO was particularly interested in my internship experience and how it relates to my chosen program in Data Science. Make sure to highlight any relevant work experience!</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant9:</strong> <span class="failure">Denied at New Delhi. The VO questioned the authenticity of my financial documents. I should have been more thorough in preparing my bank statements and sponsorship letters.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant10:</strong> <span class="success">Approved in Hyderabad! I was asked about my research interests and how they align with the faculty at my chosen university. My preparation in this area really paid off.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant11:</strong> <span class="failure">Rejected in Chennai. They were concerned about my low GRE scores and questioned if I could handle the academic rigor of my chosen program. I should have addressed this potential weakness proactively.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant12:</strong> <span class="success">Got approved in Mumbai! The VO liked that I had a clear plan for how my studies would contribute to my long-term career goals in India's growing tech industry.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant13:</strong> <span class="failure">Kolkata consulate refusal. They didn't seem convinced about my choice of university. I should have researched more about why that specific program is the best fit for me.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant14:</strong> <span class="success">Visa granted at New Delhi! My strong academic background and letters of recommendation from professors seemed to impress the VO. They barely asked about finances.</span>
+        </div>
+        <div class="chat-message">
+            <strong>Applicant15:</strong> <span class="failure">Denied at Hyderabad. The VO was concerned about my family ties, thinking I might not return to India. I should have emphasized my commitments and future plans in India more clearly.</span>
+        </div>
+    </div>
+
+    <div class="hyderabad-tips">
+        <h3>Tips for a Successful Visa Interview:</h3>
+        <ul>
+            <li>Be prepared to discuss your academic history and future plans in detail.</li>
+            <li>Have a clear explanation for why you chose your specific university and program.</li>
+            <li>Be ready to demonstrate strong ties to India and your intent to return after studies.</li>
+            <li>Ensure all your documents are well-organized and easily accessible.</li>
+            <li>Practice speaking clearly and confidently in English.</li>
+            <li>Be honest and consistent in your responses.</li>
+            <li>Highlight any research experience or internships relevant to your chosen field.</li>
+            <li>Be prepared to explain how your studies will benefit your career goals and contribute to India.</li>
+            <li>Address potential weaknesses in your application proactively.</li>
+            <li>Research your chosen university and program thoroughly.</li>
+            <li>Have a clear plan for financing your education and be ready to provide supporting documents.</li>
+        </ul>
+    </div>
+
+    <script>
+        // Updated sample data (you would replace this with actual analyzed data)
+        const consulates = ['Chennai', 'Mumbai', 'New Delhi', 'Hyderabad', 'Kolkata'];
+        const approvalRates = [82, 85, 80, 83, 78];
+        const refusalRates = [18, 15, 20, 17, 22];
+        const refusalReasons = [
+            { reason: 'Lack of financial evidence', percentage: 28 },
+            { reason: 'Weak ties to home country', percentage: 24 },
+            { reason: 'Inconsistent information', percentage: 16 },
+            { reason: 'Poor academic fit', percentage: 13 },
+            { reason: 'Insufficient English proficiency', percentage: 11 },
+            { reason: 'Lack of preparation', percentage: 5 },
+            { reason: 'Previous visa violations', percentage: 3 }
+        ];
+
+        const ctxApproval = document.getElementById('approvalChart').getContext('2d');
+        new Chart(ctxApproval, {
+            type: 'bar',
+            data: {
+                labels: consulates,
+                datasets: [{
+                    label: 'Approval Rate (%)',
+                    data: approvalRates,
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Visa Approval Rates by Consulate'
+                    }
+                }
+            }
+        });
+
+        const ctxRefusal = document.getElementById('refusalChart').getContext('2d');
+        new Chart(ctxRefusal, {
+            type: 'pie',
+            data: {
+                labels: consulates,
+                datasets: [{
+                    label: 'Refusal Rate (%)',
+                    data: refusalRates,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Visa Refusal Rates by Consulate'
+                    },
+                    legend: {
+                        position: 'right',
+                    }
+                }
+            }
+        });
+
+        const ctxRefusalReasons = document.getElementById('refusalReasonsChart').getContext('2d');
+        new Chart(ctxRefusalReasons, {
+            type: 'doughnut',
+            data: {
+                labels: refusalReasons.map(item => item.reason),
+                datasets: [{
+                    label: 'Refusal Reasons (%)',
+                    data: refusalReasons.map(item => item.percentage),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
+                        'rgba(255, 159, 64, 0.6)',
+                        'rgba(201, 203, 207, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(201, 203, 207, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Common Reasons for Visa Refusal'
+                    },
+                    legend: {
+                        position: 'right',
+                    }
+                }
+            }
+        });
+    </script>
+</body></html>
